@@ -1,0 +1,6 @@
+1) create fetch function to get http call
+2) create crawler function that get the html page from link
+3) create graph data stracture with Node and hashMap/Array
+4) create graph add function and find function
+5) create function that loop over wiki links and perform crawling on the link html page
+6) for every link save page data in graph and call the crawler function 

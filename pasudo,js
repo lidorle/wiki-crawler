@@ -1,0 +1,47 @@
+/**
+ * @param link
+ * @return html page
+ */
+const fetchData = () => {};
+
+/**
+ * @param html
+ * @return linksArray
+ * @return pageObject
+ */
+const crawler = (html) => {};
+
+/**
+ * @param link
+ * @return
+ */
+const crawlerLink = (link) => {
+  const htmlPageData = fetchData(link);
+  const pageData = crawler(htmlPageData);
+  return pageData;
+};
+
+const saveEdgeInGraph = (wikiEntry) => {};
+
+const crawlerLinks = (links,level, counterLevel) => {
+  if (!links || !links.length) {
+    return;
+  }
+
+  if(level=== counterLevel){
+    return 
+  }
+
+  counterLevel++
+  
+  for (let i = 0; i < links; i++) {
+    const pageData = crawlerLink(link);
+    return saveEdgeInGraph(pageData.links);
+  }
+};
+
+const run = (link) => {
+  let counterLevel = 0;
+  const pageData = crawlerLink(link);
+  crawlerLinks(pageData,level, counterLevel);
+};
